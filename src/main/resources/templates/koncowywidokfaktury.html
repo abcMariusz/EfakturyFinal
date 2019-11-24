@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title> moja strona </title>
+    <meta name="author" content="Mateusz Fiolek">
+    <meta name="description" content="The HTML hello world">
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" href="../static/css/koncowywidok.css">
+</head>
+
+<body>
+<h1>Faktura VAT</h1>
+<div id="container">
+    <div class="row">
+        <div class="col align-self-start col-6">
+            FR/2019/10/1
+        </div>
+
+        <div id="right" class="col align-self-end ">
+            Miejsce i data wystawienia:<p>Kraków, 30.11.2019</p>
+            Data sprzedaży<p>24.11.2019</p>
+        </div>
+    </div>
+    <br>
+    <div id="danesprzedawcynadawcy">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Sprzedawca</h2>
+                <p> Nazwa firmy</p>
+                <p> Ulica</p>
+                <p> Kod Pocztowy, Miejscowość</p>
+                <p> NIP</p>
+
+            </div>
+            <div class="col-md-6">
+                <h2>Nabywca</h2>
+                <p> Nazwa firmy</p>
+                <p> Ulica</p>
+                <p> Kod Pocztowy, Miejscowość</p>
+                <p> NIP</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ###########################################################################-->
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Lp</th>
+            <th scope="col">Nazwa usługi</th>
+            <th scope="col">ilość</th>
+            <th scope="col">Cena netto</th>
+            <th scope="col">Wartość po rabacie</th>
+            <th scope="col">Wartość po rabacie</th>
+            <th scope="col">VAT [%]</th>
+            <th scope="col">Kwota podatku</th>
+            <th scope="col">Wartośc brutto</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----</td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+    <br>
+    <div id="informacje">
+        <div>Do zapłaty: <p> 369,00 </p> zł </div>
+        <div>Słownie: <p> trzysta sześćdziesiąt złotych zero groszy</p></div>
+        <div>Wystawił: <p>    </p></div>
+        <div><p> 45 1060 0135 2601 0000 0000 0000 </p> Nazwa banku: <p> MBank </p></div>
+        <div> Termin płatności: <p>14 dni </p>upływa <p></p></div>
+    </div>
+
+    <div id="przyciski">
+        <div class="row">
+            <button type="button" class="btn btn-secondary">Drukuj</button>
+            <button type="button" class="btn btn-info">Wyślij</button>
+            <button type="button" class="btn btn-warning">Zapisz</button>
+        </div>
+    </div>
+
+</div> <!--znacznik zamykajacy kontener-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
