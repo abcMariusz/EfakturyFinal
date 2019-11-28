@@ -30,6 +30,21 @@ public class User implements Serializable {
     private List<Bill> bills;
 
     public Long getId() {
+
         return id;
     }
+    public String getNip() {
+        return nip;
+    }
+
+    public String getHaslo() {
+        return haslo;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+
+
 }

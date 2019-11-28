@@ -29,7 +29,7 @@ public class UserService {
     public List<UserDto> getAllUser(){
         List<User> users = userRepository.findAll();
         for (User u : users){
-            System.out.println("User: "+u.getId()+" "+u.getNip());
+            System.out.println("User: " + u.getId()+ " " + u.getNip());
         }
         return users.stream().map(u->mapper.map(u,UserDto.class)).collect(Collectors.toList());
     }

@@ -28,7 +28,7 @@ public class BillService {
     public List<BillDto> getAllBill(){
         List<Bill> bills = billRepository.findAll();
         for (Bill b : bills){
-            System.out.println("Bill "+b.getId()+" "+b.getCustomerName()+" "+b.getNrFakt()+" "+b.getDate()+" "+b.getPrice());
+            System.out.println("Bill " + b.getId() + " "+b.getCustomerName()+" "+b.getNrFakt()+" "+b.getDate()+" "+b.getPrice());
         }
         return  bills.stream().map(b->mapper.map(b, BillDto.class)).collect(Collectors.toList());
     }

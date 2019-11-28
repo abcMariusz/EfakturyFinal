@@ -15,7 +15,7 @@ public class UserDto {
     public UserDto(String nip, String haslo, String role, CompanyDto companyDto, AddressDto addressDto) {
         this.nip = nip;
         this.haslo = haslo;
-        this.role = role;
+        this.role = role;                  //administrator
     }
 
     public UserDto() {
